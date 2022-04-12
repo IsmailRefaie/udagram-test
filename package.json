@@ -5,7 +5,5 @@
         "frontend:build": "cd udagram-frontend && npm run build",
         "backend:build": "cd udagram-api && npm run build"
     },
-    "dependencies": {
-        "cross-env": "^7.0.3"
-    }
+    "dependencies": { }
 }

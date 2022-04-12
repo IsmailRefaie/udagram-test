@@ -10,7 +10,8 @@
     "prod": "tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "build": "tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "eb init udagram-api -r $AWS_DEFAULT_REGION -p node.js && eb deploy"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
